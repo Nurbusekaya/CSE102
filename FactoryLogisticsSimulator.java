@@ -44,8 +44,8 @@ public class FactoryLogisticsSimulator {
         TechModule top = ready.pop();
         System.out.println("Top (LIFO): " + top.getModelName()          // Beta
                 + " cost: " + top.getManufacturingCost());  // 251.6
-        IShipable.TechModule next = ready.pop();
-        System.out.println("Next: " + next.getModelNmae() + " cost: " + next.getManufacturingCost());      // 890.0
+        TechModule next = ready.pop();
+        System.out.println("Next: " + next.getModelName() + " cost: " + next.getManufacturingCost());      // 890.0
     }
 }
 interface IShipable {
